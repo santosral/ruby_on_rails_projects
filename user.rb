@@ -8,5 +8,5 @@ class User
       puts "User's info are #{@user} #{@address}."
     end
   end
-  User1 = User.new("zack", "zack@gmail.com")
-  User1.info
+  user1 = User.new("zack", "zack@gmail.com")
+  user1.info
