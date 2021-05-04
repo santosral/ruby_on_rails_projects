@@ -1,13 +1,13 @@
 class Profile
-    attr_accessor :full_name, :age, :address, :work
+attr_accessor :full_name, :age, :work
   
-    def initialize(full_name, age, address, work)
-      @full_name = full_name
+def initialize(full_name, age, address, work)
+    @full_name = full_name
       @age = age
       @address = address
       @work = work
     end
-  end
+    end
   
   my_profile = Profile.new('Juan', 18, 'Bulacan', 'Instructor')
   
