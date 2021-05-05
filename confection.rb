@@ -11,9 +11,8 @@ class Confection
     end
   end
 
-  class Banana_Cake < Confection
+  class Banana_Cake < Confection 
   end
-end
 
   cupcake = Cupcake.new
   bananacake = Banana_Cake.new
