@@ -1,3 +1,4 @@
+# Open and Closed Principle
 class Teacher
     def initialize(name)
       @name = name.capitalize
@@ -8,16 +9,17 @@ class Teacher
     end
   end
   
-  class Programmer < Teacher
+  # Class is open for extension and it is closed for modification
+  class TeacherAndProgrammer < Teacher
     def program
        "#{@name} is working on his project."
     end
   end
   
 # Examples
-#   user1 = Teacher.new('ian')
-#   puts user1.teach
+#   teacher = Teacher.new('ian')
+#   puts teacher.teach
 
-#   user2 = TeacherAndProgrammer.new('ralph')
-#   user2.teach
-#   puts user2.program
+#   teacher_programmer = TeacherAndProgrammer.new('ian')
+#   puts teacher_programmer.teach
+#   puts teacher_programmer.program
